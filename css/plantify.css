@@ -1,0 +1,258 @@
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background-color: black;
+	font-family: 'Roboto', sans-serif;
+}
+
+header {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	justify-items: center;
+	align-content: center;
+
+}
+
+header .banner_text {
+	align-self: center;
+	justify-self: center;
+	font-weight: 100;
+}
+
+header .banner_text > h1 {
+/*	font-family: 'Condiment', cursive;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+header .banner_text > h2 {
+/*	font-family: 'Condiment', cursive;*/
+	font-size: 15px;
+}
+
+.banner_text > h1 > span {
+	color: white;
+}
+
+.banner_text > h1 > span {
+	color: white;
+	filter: blur(0px);
+	animation-name: specialtext;
+	animation-duration: 3s;
+  	animation-iteration-count: infinite;
+  	animation-timing-function: ease-out;
+}
+
+@keyframes specialtext {
+  0%   {color: white;
+  		filter: blur(0px);
+  }
+  45%  {color: green;
+  		filter: blur(1.5px);
+  }
+	75% {color: limegreen;
+  		filter: blur(2px);
+
+  }
+
+  100% {color: white;
+  		filter: blur(0px);
+  }
+}
+
+header .banner_img {
+	height: 90vh;
+	width: auto;
+	align-self: center;
+	justify-self: center;
+}
+
+
+
+
+.section1 {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 2fr;
+	justify-items: center;
+	align-content: center;
+
+}
+
+.section1 .banner_text {
+	align-self: center;
+	justify-self: center;
+	font-weight: 100;
+}
+
+.section1 .banner_text > h1 {
+/*	font-family: 'Condiment', cursive;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+.section1 .banner_text > h2 {
+/*	font-family: 'Condiment', cursive;*/
+	font-size: 15px;
+}
+
+
+.section1 .banner_img {
+	height: 80vh;
+	width: auto;
+	align-self: center;
+	justify-self: center;
+	border-radius: 15px;
+	animation-duration: 2s;
+	animation-name: specialimg1;
+	animation-iteration-count: infinite;
+}
+
+.section1 .oneblur {
+	animation-duration: 4s;
+	animation-name: specialimg1;
+	animation-iteration-count: infinite;
+}
+
+.section1 .twoblur {
+	animation-duration: 4s;
+	animation-delay: 2s;
+	animation-name: specialimg1;
+	animation-iteration-count: infinite;
+}
+
+@keyframes specialimg1 {
+  0%   {
+  		filter: blur(0px);
+  }
+  50%  {
+  		filter: blur(4px);
+  }
+
+  100% {
+  		filter: blur(0px);
+  }
+}
+
+
+
+.section2 {
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	justify-items: center;
+	align-content: center;
+
+}
+
+.section2 .banner_text {
+	align-self: center;
+	justify-self: center;
+
+	font-weight: 100;
+}
+
+.section2 .banner_text > h1 {
+/*	font-family: 'Condiment', cursive;*/
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	font-size: 2em;
+}
+
+.section2 .banner_text > h2 {
+/*	font-family: 'Condiment', cursive;*/
+	font-size: 15px;
+}
+
+.section2 .banner_img {
+	height: 70vh;
+	width: auto;
+	align-self: center;
+	justify-self: center;
+	border-radius: 15px;
+	animation-duration: 2s;
+	animation-name: specialimg1;
+	animation-iteration-count: infinite;
+}
+
+.section2 .oneblur {
+	animation-duration: 4s;
+	animation-name: specialimg2;
+	animation-iteration-count: infinite;
+}
+
+.section2 .twoblur {
+	animation-duration: 4s;
+	animation-delay: 1s;
+	animation-name: specialimg2;
+	animation-iteration-count: infinite;
+}
+
+.section2 .threeblur {
+	animation-duration: 4s;
+	animation-name: specialimg2;
+	animation-iteration-count: infinite;
+	animation-delay: 2s;
+}
+
+.section2 .fourblur {
+	animation-duration: 4s;
+	animation-delay: 3s;
+	animation-name: specialimg2;
+	animation-iteration-count: infinite;
+}
+
+@keyframes specialimg2 {
+  0%   {
+  		transform: scale(1.1);
+  }
+  25%  {
+  		transform: scale(1.0);
+  }
+
+  50% {
+  		transform: scale(1.0);
+  }
+
+  75% {
+  		transform: scale(1.0);
+  }
+
+  100% {
+  		transform: scale(1.1);
+  }
+}
+
+
+footer {
+	height: 50vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 10px;
+}
+
+footer h1 {
+	font-weight: 100;
+}
+
+footer h2 {
+	opacity: 0.8;
+}
+
+footer span img {
+	height: 40;
+	margin: 20px;
+	width: 40;
+}
